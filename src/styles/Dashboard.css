@@ -1,0 +1,9 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 24px;
+  background-color: #f8f9fc;
+  min-height: 100vh;
+  box-sizing: border-box;
+}

@@ -3,6 +3,7 @@ import { fetchDashboard } from '../services/api';
 import Card from '../components/Card';
 import GenderSection from '../components/GenderSection';
 import AgeGroupSection from '../components/AgeGroupSection';
+import '../styles/Dashboard.css';
 
 const Dashboard = () => {
   const [data, setData] = useState(null);
