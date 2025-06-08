@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Card.css';
 
 const Card = ({ label, value }) => (
   <div className="card">
