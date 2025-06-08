@@ -4,7 +4,9 @@ import Card from '../components/Card';
 import GenderSection from '../components/GenderSection';
 import AgeGroupSection from '../components/AgeGroupSection';
 import Charts from '../components/Charts';
+import SkeletonCard from '../components/SkeletonCard';
 import '../styles/Dashboard.css';
+
 
 const Dashboard = () => {
   const [data, setData] = useState(null);
@@ -13,7 +15,19 @@ const Dashboard = () => {
     fetchDashboard().then(setData).catch(console.error);
   }, []);
 
-  if (!data) return <p>Loading dashboard data...</p>;
+if (!data) {
+  return (
+    <div className="dashboard">
+      {Array.from({ length: 8 }).map((_, idx) => (
+        <SkeletonCard key={idx} />
+      ))}
+      <div style={{ marginTop: '2rem' }}>
+        <SkeletonCard />
+        <SkeletonCard />
+      </div>
+    </div>
+  );
+}
 
   return (
     <div className="dashboard">
