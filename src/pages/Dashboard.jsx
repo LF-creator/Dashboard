@@ -3,6 +3,7 @@ import { fetchDashboard } from '../services/api';
 import Card from '../components/Card';
 import GenderSection from '../components/GenderSection';
 import AgeGroupSection from '../components/AgeGroupSection';
+import Charts from '../components/Charts';
 import '../styles/Dashboard.css';
 
 const Dashboard = () => {
@@ -29,6 +30,7 @@ const Dashboard = () => {
       {/* Grouped Sections */}
       <GenderSection gender={data.gender} />
       <AgeGroupSection ageGroups={data.ageGroups} />
+      <Charts gender={data.gender} ageGroups={data.ageGroups} />
     </div>
   );
 };
