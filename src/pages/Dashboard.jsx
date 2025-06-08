@@ -15,9 +15,14 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <h1>{data.title}</h1>
       <div className="grid">
-        <Card label="Users Today" value={data.usersToday} />
-        <Card label="Active Sessions" value={data.activeSessions} />
-        <Card label="Conversion Rate" value={data.conversionRate} />
+        <Card label="Unique Contacts" value={data.uniqueContacts} />
+        <Card label="Frequency" value={data.frequency} />
+        <Card label="Average Observation Time" value={data.observationTimeAvg + ' min'} />
+        <Card label="Total Observation Time" value={data.observationTimeTotal} />
+        <Card label="RAC" value={data.rac} />
+        <Card label="Vehicles" value={data.vehicles} />
+        <Card label="Aggregated Audience" value={data.aggregatedAudience} />
+        <Card label="SOV" value={data.sov + '%'} />
       </div>
     </div>
   );
