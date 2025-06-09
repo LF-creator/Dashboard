@@ -1,55 +1,64 @@
 .card {
-  background-color: white;
+  background-color: #151f1f;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1.2rem 1.5rem;
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  flex-direction: row;
+  align-items: center;
+  min-height: 90px;
+  gap: 1rem;
+  
+
 }
 
 .card-header {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
+  justify-content: center;
+  gap: 0.75rem;
+  text-align: center;
 }
 
 .card-icon {
+  
   color: #4cc6f3;
   font-size: 1.2rem;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-}
 
-.card-label {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 0;
-  line-height: 1.2;
-}
 
-.card-value {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.icon-bubble {
-  background-color: #e6f7ff; 
-  padding: 2.6rem;
-  border-radius: 20%;
+.card-icon-container {
   display: flex;
+  
   align-items: center;
   justify-content: center;
 }
 
-.card-icon {
-  color: #4cc6f3;
-  font-size: 1.4rem;
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.card-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.icon-bubble {
+  background-color: #313d3d;
+  padding: 3rem;
+  border-radius: 11%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -4,14 +4,17 @@ import '../styles/Card.css';
 const Card = ({ label, value, icon: Icon }) => {
   return (
     <div className="card">
-      <div className="card-header">
+      <div className="card-icon-container">
         <div className="icon-bubble">
           <Icon className="card-icon" />
         </div>
-        <p className="card-label">{label}</p>
       </div>
-      <p className="card-value">{value}</p>
+      <div className="card-text">
+        <div className="card-label">{label}</div>
+        <div className="card-value">{value}</div>
+      </div>
     </div>
   );
 };
+
 export default Card;
