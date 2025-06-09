@@ -16,7 +16,7 @@ const AgeGroupBox = ({ ageGroups }) => {
               <div className="progress-bar">
                 <div className="fill" style={{ width: `${percentage}%` }}></div>
               </div>
-              <span className="age-count">{count}</span>
+              <span className="age-count">{count}%</span>
             </div>
           );
         })}
