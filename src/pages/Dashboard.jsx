@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { fetchDashboard } from '../services/api';
 import Card from '../components/Card';
-import GenderSection from '../components/GenderSection';
+
 import AgeGroupSection from '../components/AgeGroupSection';
 import Charts from '../components/Charts';
 import SkeletonCard from '../components/SkeletonCard';
+import GenderDistributionSection from '../components/GenderDistributionSection';
 import '../styles/Dashboard.css';
 
 
@@ -42,9 +43,8 @@ if (!data) {
       <Card label="SOV" value={data.sov + '%'} />
 
       {/* Grouped Sections */}
-      <GenderSection gender={data.gender} />
+      <GenderDistributionSection gender={data.gender} ageGroups={data.ageGroups} />
       <AgeGroupSection ageGroups={data.ageGroups} />
-      <Charts gender={data.gender} ageGroups={data.ageGroups} />
     </div>
   );
 };
