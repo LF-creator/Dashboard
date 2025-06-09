@@ -30,23 +30,6 @@
   max-height: 6rem;
 }
 
-.card .label {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  color: #8ca3a3;
-  font-weight: 500;
-}
-
-.card .value {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.card .icon {
-  color: #2bdac7;
-  font-size: 1.2rem;
-}
 
 .card-group {
   grid-column: 1 / -1; /* Full width */

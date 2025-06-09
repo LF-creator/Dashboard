@@ -1,13 +1,12 @@
 .card {
   background-color: white;
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-radius: 12px;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  align-items: start;
+  gap: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .card-header {
@@ -36,14 +35,13 @@
 }
 
 .card-value {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #2c3e50;
-  margin-top: 0.5rem;
+  color: #ffffff;
 }
 
 .icon-bubble {
-  background-color: #e6f7ff; /* soft blue background */
+  background-color: #e6f7ff; 
   padding: 2.6rem;
   border-radius: 20%;
   display: flex;
@@ -53,5 +51,5 @@
 
 .card-icon {
   color: #4cc6f3;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
