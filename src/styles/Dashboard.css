@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
-  background-color: #151f1f;
+  background-color: #192525;
   color: #ffffff;
   min-height: 100vh;
   box-sizing: border-box;
@@ -14,7 +14,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #151f1f;
+  background-color: #192525;
   min-height: 100vh;
 }
 

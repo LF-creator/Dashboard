@@ -46,7 +46,7 @@ if (!data) {
     <section className="card-grid">
       <Card label="Unique Contacts" value={data.uniqueContacts} icon={FaUser} />
       <Card label="Frequency" value={data.frequency} icon={FaClock} />
-      <Card label="Avg. Observation Time" value={data.observationTimeAvg + ' min'} icon={FaClock} />
+      <Card label="Avg. Observation Time" value={data.observationTimeAvg + 's'} icon={FaClock} />
       <Card label="Total Observation Time" value={data.observationTimeTotal} icon={FaClock} />
       <Card label="RAC" value={data.rac} icon={FaEye} />
       <Card label="Vehicles" value={data.vehicles} icon={FaCar} />

@@ -1,7 +1,7 @@
 .card {
-  background-color: #151f1f;
+  background-color: #192525;
   border-radius: 12px;
-  padding: 1.2rem 1.5rem;
+  padding: 0.1rem 0.1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,41 +11,18 @@
 
 }
 
-.card-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  text-align: center;
-}
-
 .card-icon {
-  
   color: #4cc6f3;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
-
-
-.card-icon-container {
-  display: flex;
-  
-  align-items: center;
-  justify-content: center;
-}
-
-.card-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .card-label {
   font-size: 0.9rem;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 .card-value {
@@ -55,8 +32,8 @@
 }
 
 .icon-bubble {
-  background-color: #313d3d;
-  padding: 3rem;
+  background-color: #36414186;
+  padding: 2.3rem;
   border-radius: 11%;
   display: flex;
   align-items: center;
