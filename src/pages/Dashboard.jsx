@@ -42,6 +42,7 @@ if (!data) {
     <div className="dashboard-container">
   <div className="dashboard">
     {/* Metric Cards */}
+    <h1 className="dashboard-title">Dashboard</h1>
     <section className="card-grid">
       <Card label="Unique Contacts" value={data.uniqueContacts} icon={FaUser} />
       <Card label="Frequency" value={data.frequency} icon={FaClock} />

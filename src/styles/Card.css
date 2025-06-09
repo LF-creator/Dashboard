@@ -28,7 +28,8 @@
 }
 
 .card-label {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: bold;
   color: #ffffff;
   margin-bottom: 0;
   line-height: 1.2;
