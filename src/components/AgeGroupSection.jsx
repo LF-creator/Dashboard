@@ -1,16 +1,28 @@
-import Card from './Card';
+import React from "react";
+import "../styles/AgeGroupBox.css";
 
-const AgeGroupSection = ({ ageGroups }) => {
-  const groups = ageGroups || {}; // fallback to empty object
+const AgeGroupBox = ({ ageGroups }) => {
+  const max = Math.max(...Object.values(ageGroups));
 
   return (
-    <section className="card-group">
-      <h3>Age Groups</h3>
-      {Object.entries(groups).map(([age, count]) => (
-        <Card key={age} label={`Age ${age}`} value={count} />
-      ))}
-    </section>
+    <div className="age-box">
+      <h3>Age Group Distribution</h3>
+      <div className="age-bars">
+        {Object.entries(ageGroups).map(([age, count]) => {
+          const percentage = (count / max) * 100;
+          return (
+            <div className="age-bar" key={age}>
+              <span className="age-label">Age {age}</span>
+              <div className="progress-bar">
+                <div className="fill" style={{ width: `${percentage}%` }}></div>
+              </div>
+              <span className="age-count">{count}</span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 
-export default AgeGroupSection;
+export default AgeGroupBox;

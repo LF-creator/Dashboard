@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { fetchDashboard } from '../services/api';
 import Card from '../components/Card';
-
+import GenderSection from '../components/GenderSection';
 import AgeGroupSection from '../components/AgeGroupSection';
 import SkeletonCard from '../components/SkeletonCard';
-import GenderDistributionSection from '../components/GenderDistributionSection';
+
 import '../styles/Dashboard.css';
 
 import {
@@ -39,8 +39,10 @@ if (!data) {
 }
 
   return (
-    <div className="dashboard">
-      {/* Main Stats */}
+    <div className="dashboard-container">
+  <div className="dashboard">
+    {/* Metric Cards */}
+    <section className="card-grid">
       <Card label="Unique Contacts" value={data.uniqueContacts} icon={FaUser} />
       <Card label="Frequency" value={data.frequency} icon={FaClock} />
       <Card label="Avg. Observation Time" value={data.observationTimeAvg + ' min'} icon={FaClock} />
@@ -49,11 +51,15 @@ if (!data) {
       <Card label="Vehicles" value={data.vehicles} icon={FaCar} />
       <Card label="Aggregated Audience" value={data.aggregatedAudience} icon={FaUsers} />
       <Card label="SOV" value={data.sov + '%'} icon={FaChartPie} />
+    </section>
 
-      {/* Grouped Sections */}
+    {/* Stacked Sections */}
+    <section className="data-sections">
       <AgeGroupSection ageGroups={data.ageGroups} />
-      <GenderDistributionSection gender={data.gender} ageGroups={data.ageGroups} />
-    </div>
+      <GenderSection gender={data.gender} />
+    </section>
+  </div>
+</div>
   );
 };
 

@@ -1,0 +1,7 @@
+.gender-box {
+  background-color: #151f1f;
+  padding: 1rem;
+  border-radius: 12px;
+  flex: 1;
+  max-height: 20rem;
+}
