@@ -3,7 +3,6 @@ import { fetchDashboard } from '../services/api';
 import Card from '../components/Card';
 
 import AgeGroupSection from '../components/AgeGroupSection';
-import Charts from '../components/Charts';
 import SkeletonCard from '../components/SkeletonCard';
 import GenderDistributionSection from '../components/GenderDistributionSection';
 import '../styles/Dashboard.css';
