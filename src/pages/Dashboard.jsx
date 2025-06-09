@@ -42,8 +42,8 @@ if (!data) {
       <Card label="SOV" value={data.sov + '%'} />
 
       {/* Grouped Sections */}
-      <GenderDistributionSection gender={data.gender} ageGroups={data.ageGroups} />
       <AgeGroupSection ageGroups={data.ageGroups} />
+      <GenderDistributionSection gender={data.gender} ageGroups={data.ageGroups} />
     </div>
   );
 };
