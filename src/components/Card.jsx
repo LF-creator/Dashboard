@@ -1,11 +1,16 @@
 import React from 'react';
 import '../styles/Card.css';
 
-const Card = ({ label, value }) => (
-  <div className="card">
-  <div className="card-label">{label}</div>
-  <div className="card-value">{value}</div>
-  </div>
-);
+const Card = ({ label, value, icon: Icon }) => {
+  return (
+    <div className="card">
+      <div className="card-header">
+        {Icon && <Icon className="card-icon" />}
+        <p className="card-label">{label}</p>
+      </div>
+      <p className="card-value">{value}</p>
+    </div>
+  );
+};
 
 export default Card;
