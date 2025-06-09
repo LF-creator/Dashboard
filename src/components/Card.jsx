@@ -3,8 +3,8 @@ import '../styles/Card.css';
 
 const Card = ({ label, value }) => (
   <div className="card">
-    <h3>{label}</h3>
-    <p>{value}</p>
+  <div className="card-label">{label}</div>
+  <div className="card-value">{value}</div>
   </div>
 );
 

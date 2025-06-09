@@ -23,3 +23,14 @@
   font-size: 1.2rem;
   color: #333;
 }
+
+@media (max-width: 600px) {
+  .dashboard {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
