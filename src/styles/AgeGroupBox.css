@@ -1,29 +1,37 @@
 .age-box {
   background-color: #36414186;
   padding: 1rem;
-  border-radius: 12px;
+  border-radius: 10px;
   flex: 1;
-  max-height: 30rem;
+  max-height: 20rem;
 }
 
 .age-bars {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.3rem;
 }
 
-
+.age-bar {
+  height: 6px;
+  flex: 1;
+  margin: 0 0.5rem;
+  position: relative;
+}
 
 .age-label {
-  width: 80px;
+  min-width: 70px;
   color: #ccc;
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 .age-count {
   color: #ffffff;
   display: flex;
   justify-content: end;
+  font-size: 0.85rem;
+  min-width: 32px;
+  text-align: right;
   
 }
 
@@ -31,7 +39,7 @@
   flex: 1;
   background: #3d454d;
   border-radius: 4px;
-  height: 5px;
+  height: 3px;
   overflow: hidden;
 }
 

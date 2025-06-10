@@ -2,14 +2,14 @@ import React from "react";
 import "../styles/AgeGroupBox.css";
 
 const AgeGroupBox = ({ ageGroups }) => {
-  const max = Math.max(...Object.values(ageGroups));
+  const max = Math.pow(...Object.values(ageGroups));
 
   return (
     <div className="age-box">
       <h3>Age Group Distribution</h3>
       <div className="age-bars">
         {Object.entries(ageGroups).map(([age, count]) => {
-          const percentage = (count / max) * 100;
+          const percentage = (count / max) * 250;
           return (
             <div className="age-bar" key={age}>
               <span className="age-label">{age}</span>
