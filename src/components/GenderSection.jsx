@@ -16,7 +16,7 @@ const GenderSection = ({ gender }) => {
 
   return (
     <div className="gender-box">
-      <h3 className="genderHeader">Gender Distribution</h3>
+      <h3 className="genderHeader">CONTACTS BY GENDER</h3>
             <div className="gender-content">
         <div className="gender-stats">
           <div className="gender-row">
@@ -29,27 +29,27 @@ const GenderSection = ({ gender }) => {
           </div>
         </div>
         <div className="gender-chart">
-          <ResponsiveContainer width={"100%"} height={200}>
+          <ResponsiveContainer width={"100%"} height={320}>
             <PieChart>
               <Pie
                 data={data}
                 dataKey="value"
                 nameKey="name"
                 cx="50%"
-                cy="70%"
+                cy="50%"
                 startAngle={180}
                 endAngle={0}
                 paddingAngle={6}
                 cornerRadius={6}
                 innerRadius={95}
-                outerRadius={100}
+                outerRadius={98}
                 fill="#8884d8"
               >
                 {data.map((_, index) => (
                   <Cell
                     key={`cell-${index}`}
                     fill={COLORS[index % COLORS.length]}
-                    style={{ filter: `drop-shadow(0 5px 5px ${COLORS[index % COLORS.length]})` }}
+                    style={{ filter: `drop-shadow(0 9px 9px ${COLORS[index % COLORS.length]})` }}
                   />
                 ))}
               </Pie>

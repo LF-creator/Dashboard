@@ -13,7 +13,7 @@
 .dashboard-container {
   max-width: 1250px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0rem;
   background-color: #192525;
   min-height: 100vh;
 }

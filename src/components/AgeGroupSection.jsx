@@ -6,7 +6,7 @@ const AgeGroupBox = ({ ageGroups }) => {
 
   return (
     <div className="age-box">
-      <h3 className="ageHeader">Age Groups</h3>
+      <h3 className="ageHeader">AGE GROUPS</h3>
       <div className="age-bars">
         {Object.entries(ageGroups).map(([age, count]) => {
           const percentage = (count / max) * 250;
