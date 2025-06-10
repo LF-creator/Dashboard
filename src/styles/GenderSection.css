@@ -2,6 +2,7 @@
   background-color: #36414186;
   padding: 1rem;
   border-radius: 10px;
-  flex: 1;
   max-height: 20rem;
+  display: flex;
+  align-content: center;
 }

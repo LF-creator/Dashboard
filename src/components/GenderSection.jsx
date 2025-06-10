@@ -19,7 +19,6 @@ const GenderSection = ({ gender }) => {
   const firstSegmentPercentage = firstSegmentValue / totalValue;
   const firstSegmentEndAngle = startAngle - (startAngle - endAngle) * firstSegmentPercentage;
   const midpointAngle = firstSegmentEndAngle - (firstSegmentEndAngle - endAngle) / 2;
-  const radius = 70;
 
   const COLORS = ["#00d9c0", "#4cc6f3"];
 
@@ -38,7 +37,7 @@ const GenderSection = ({ gender }) => {
             endAngle={0}
             paddingAngle={0}
             cornerRadius={6}
-            innerRadius={70}
+            innerRadius={75}
             outerRadius={80}
             fill="#8884d8"
             label
