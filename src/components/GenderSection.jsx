@@ -19,7 +19,13 @@ const GenderSection = ({ gender }) => {
             data={data}
             dataKey="value"
             nameKey="name"
-            innerRadius={50}
+            cx={100}
+            cy={100}
+            startAngle={180}
+            endAngle={0}
+            paddingAngle={0}
+            cornerRadius={6}
+            innerRadius={70}
             outerRadius={80}
             fill="#8884d8"
             label
