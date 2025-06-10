@@ -10,14 +10,17 @@ import '../styles/Dashboard.css';
 import {
   FaRegUser,
   FaRegClock,
-  FaEye,
-  FaCar,
-  FaUserFriends,
-  FaChartPie,
   FaRedo,
-  LuEye
 
 } from 'react-icons/fa';
+
+import {
+  LuEye,
+  LuRows2,
+  LuUsers,
+  LuCarFront
+
+} from 'react-icons/lu';
 
 
 const Dashboard = () => {
@@ -50,11 +53,11 @@ if (!data) {
       <Card label="Unique Contacts" value={data.uniqueContacts} icon={FaRegUser} />
       <Card label="Frequency" value={data.frequency} icon={FaRedo} />
       <Card label="RAC" value={data.rac} icon={LuEye} />
-      <Card label="Aggregated Audience" value={data.aggregatedAudience} icon={FaUserFriends} />
-      <Card label="Avg. Observation Time" value={data.observationTimeAvg + 's'} icon={FaEye} />
+      <Card label="Aggregated Audience" value={data.aggregatedAudience} icon={LuUsers} />
+      <Card label="Avg. Observation Time" value={data.observationTimeAvg + 's'} icon={LuEye} />
       <Card label="Total Observation Time" value={data.observationTimeTotal} icon={FaRegClock} />
-      <Card label="Vehicles" value={data.vehicles} icon={FaCar} />
-      <Card label="SOV" value={data.sov + '%'} icon={FaChartPie} />
+      <Card label="Vehicles" value={data.vehicles} icon={LuCarFront} />
+      <Card label="SOV" value={data.sov + '%'} icon={LuRows2} />
     </section>
 
     {/* Stacked Sections */}
