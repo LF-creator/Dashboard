@@ -29,37 +29,46 @@ const GenderSection = ({ gender }) => {
           </div>
         </div>
         <div className="gender-chart">
-          <ResponsiveContainer width="100%" height={200}>
+          <ResponsiveContainer width={"100%"} height={200}>
             <PieChart>
               <Pie
                 data={data}
                 dataKey="value"
                 nameKey="name"
                 cx="50%"
-                cy="40%"
+                cy="70%"
                 startAngle={180}
                 endAngle={0}
-                paddingAngle={8}
+                paddingAngle={6}
                 cornerRadius={6}
-                innerRadius={75}
-                outerRadius={80}
+                innerRadius={95}
+                outerRadius={100}
                 fill="#8884d8"
               >
                 {data.map((_, index) => (
                   <Cell
                     key={`cell-${index}`}
                     fill={COLORS[index % COLORS.length]}
-                    style={{ filter: `drop-shadow(0 10px 10px ${COLORS[index % COLORS.length]})` }}
+                    style={{ filter: `drop-shadow(0 5px 5px ${COLORS[index % COLORS.length]})` }}
                   />
                 ))}
               </Pie>
             </PieChart>
           </ResponsiveContainer>
+          <div className="gender-center-display">
+  <div className="left-percent">
+    <span className="big-percent">{femalePercentage}</span>
+    <span className="percent-symbol">%</span>
+    <div className="center-label">Female</div>
+  </div>
+  <div className="divider" />
+  <div className="right-percent">
+    <span className="big-percent">{malePercentage}</span>
+    <span className="percent-symbol">%</span>
+    <div className="center-label">Male</div>
+  </div>
+</div>
         </div>
-      </div>
-      <div className="gender-percentages">
-        <span className="gender-percent female">{femalePercentage}%</span>
-        <span className="gender-percent male">{malePercentage}%</span>
       </div>
     </div>
   );
