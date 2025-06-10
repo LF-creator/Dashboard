@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Card.css';
 
-const Card = ({ label, value, icon: Icon }) => {
+const Card = ({ label, value, icon: Icon, change }) => {
   return (
     <div className="card">
       <div className="card-icon-container">
@@ -11,7 +11,10 @@ const Card = ({ label, value, icon: Icon }) => {
       </div>
       <div className="card-text">
         <div className="card-label">{label}</div>
-        <div className="card-value">{value}</div>
+        <div className="card-value-container">
+          <div className="card-value">{value}</div>
+          {change && <div className="card-change">{change}</div>}
+        </div>
       </div>
     </div>
   );
