@@ -61,8 +61,9 @@ const GenderSection = ({ gender }) => {
     <div className="center-label">Female</div>
   </div>
   <div className="divider" />
-  <span className="percent-symbol">%</span>
-
+    <div className="center-percent">
+    
+  </div>
   <div className="right-percent">
     <span className="big-percent">{malePercentage}</span>
     <div className="center-label">Male</div>
