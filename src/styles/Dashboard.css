@@ -23,14 +23,14 @@
   transform: scale(1, 1.5);
   font-style:initial;
   font-weight: normal;
-  margin-bottom: auto;
+  margin-bottom: 0rem;
   margin-top: auto;
 }
 .divider-line {
   border: none;
   border-top: 1px solid #394646;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 0rem;
   margin-bottom: 1.5rem;
 }
 
