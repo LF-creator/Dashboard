@@ -31,8 +31,8 @@ const GenderSection = ({ gender }) => {
             data={data}
             dataKey="value"
             nameKey="name"
-            cx={100}
-            cy={100}
+            cx="50%"
+            cy="50%"
             startAngle={180}
             endAngle={0}
             paddingAngle={0}
@@ -53,6 +53,18 @@ const GenderSection = ({ gender }) => {
           </Pie>
         </PieChart>
       </ResponsiveContainer>
+
+      <div className="gender-stats">
+  <div className="gender-column left">
+    <span className="gender-label female">Female</span>
+    <span className="gender-value">{gender.female.toLocaleString()}</span>
+  </div>
+  <div className="gender-center">%</div>
+  <div className="gender-column right">
+    <span className="gender-label male">Male</span>
+    <span className="gender-value">{gender.male.toLocaleString()}</span>
+  </div>
+</div>
     </div>
   );
 };

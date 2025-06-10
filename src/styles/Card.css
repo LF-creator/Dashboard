@@ -7,13 +7,14 @@
   align-items: center;
   min-height: 90px;
   gap: 1rem;
-  
-
+  align-self: start;
+  order: +2;  
 }
 
+
 .card-icon {
-  color: #4cc6f3;
-  font-size: 1.8rem;
+  color: #07fde1;
+  font-size: 1.3rem;
 }
 
 
