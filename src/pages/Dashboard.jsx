@@ -22,6 +22,10 @@ import {
 
 } from 'react-icons/lu';
 
+const BasicLine = ({ color }) => (
+    <hr className="divider-line"/>
+);
+
 
 const Dashboard = () => {
   const [data, setData] = useState(null);
@@ -49,6 +53,7 @@ if (!data) {
   <div className="dashboard">
     {/* Metric Cards */}
     <h1 className="dashboard-title">Dashboard</h1>
+    <BasicLine color="grey" />
     <section className="card-grid">
       <Card label="Unique Contacts" value={data.uniqueContacts} icon={FaRegUser} />
       <Card label="Frequency" value={data.frequency} icon={FaRedo} />

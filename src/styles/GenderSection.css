@@ -10,14 +10,29 @@
   flex: 1;
 }
 
+.gender-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.gender-chart {
+  flex: 1;
+}
+
 .gender-stats {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
-  padding: 0 1rem;
-  margin-top: 0.5rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
+.gender-row {
+  display: flex;
+  align-items: center;
+}
+
 
 .gender-column {
   display: flex;
@@ -28,15 +43,21 @@
 
 .gender-label {
   font-size: 0.85rem;
-  font-weight: 500;
-  color: #ccc;
-}
-
-.gender-value {
-  font-size: 0.9rem;
   font-weight: 600;
-  color: #ffffff;
-  margin-top: 0.2rem;
+  color: #b0c4c4;
+}
+.gender-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-left: 0.5rem;
+
+}
+.female {
+  color: #00d9c0;
+}
+.male {
+  color: #4cc6f3;
 }
 
 .gender-center {
