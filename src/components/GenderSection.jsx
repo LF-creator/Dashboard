@@ -1,5 +1,5 @@
 import React from "react";
-import { PieChart, Pie, Cell, ResponsiveContainer,Label } from "recharts";
+import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import "../styles/GenderSection.css";
 
 const GenderSection = ({ gender }) => {
@@ -8,18 +8,11 @@ const GenderSection = ({ gender }) => {
     { name: "Male", value: gender.male },
   ];
 
-    const percentage = (
-    (data[0].value / (data[0].value + data[1].value)) *
-    100
-  ).toFixed(0);
-  const startAngle = 180; 
-  const endAngle = 0; 
-  const totalValue = data.reduce((acc, item) => acc + item.value, 0);
-  const firstSegmentValue = data[0].value;
-  const firstSegmentPercentage = firstSegmentValue / totalValue;
-  const firstSegmentEndAngle = startAngle - (startAngle - endAngle) * firstSegmentPercentage;
-  const midpointAngle = firstSegmentEndAngle - (firstSegmentEndAngle - endAngle) / 2;
-  const COLORS = ["#00d9c0", "#4cc6f3"];
+  const total = data[0].value + data[1].value;
+  const femalePercentage = ((data[0].value / total) * 100).toFixed(0);
+  const malePercentage = ((data[1].value / total) * 100).toFixed(0);
+
+    const COLORS = ["#00d9c0", "#4cc6f3"];
 
   return (
     <div className="gender-box">
@@ -43,28 +36,30 @@ const GenderSection = ({ gender }) => {
                 dataKey="value"
                 nameKey="name"
                 cx="50%"
-                cy="50%"
+                cy="40%"
                 startAngle={180}
                 endAngle={0}
-                paddingAngle={0}
+                paddingAngle={8}
                 cornerRadius={6}
                 innerRadius={75}
                 outerRadius={80}
                 fill="#8884d8"
-                label
               >
                 {data.map((_, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                  <Cell
+                    key={`cell-${index}`}
+                    fill={COLORS[index % COLORS.length]}
+                    style={{ filter: `drop-shadow(0 10px 10px ${COLORS[index % COLORS.length]})` }}
+                  />
                 ))}
-                <Label
-                  value={`${percentage}%`}
-                  position="center"
-                  style={{ fontSize: "30px", fontWeight: "700" }}
-                />
               </Pie>
             </PieChart>
           </ResponsiveContainer>
         </div>
+      </div>
+      <div className="gender-percentages">
+        <span className="gender-percent female">{femalePercentage}%</span>
+        <span className="gender-percent male">{malePercentage}%</span>
       </div>
     </div>
   );

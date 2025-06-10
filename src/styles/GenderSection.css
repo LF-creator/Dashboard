@@ -2,12 +2,11 @@
   background-color: #36414186;
   padding: 1rem;
   border-radius: 8px;
-  max-height: 20rem;
+  min-height: 240px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: start;
-  flex: 1;
 }
 
 .gender-content {
@@ -16,6 +15,7 @@
   width: 100%;
 }
 
+
 .gender-chart {
   flex: 1;
 }
@@ -23,14 +23,16 @@
 .gender-stats {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  min-width: 100px;
 }
 
 .gender-row {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 
@@ -66,4 +68,17 @@
   font-weight: 400;
   width: 40px;
   text-align: center;
+}
+
+.gender-percentages {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gender-percent {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
 }
