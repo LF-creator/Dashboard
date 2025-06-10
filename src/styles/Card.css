@@ -19,7 +19,7 @@
 
 
 .card-label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
@@ -27,8 +27,8 @@
 }
 
 .card-value {
-  font-size: 3rem;
- 
+  font-size: 3.5rem;
+  transform: scale(1, 1.2);
   color: #ffffff;
 }
 
