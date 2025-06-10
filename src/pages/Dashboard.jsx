@@ -59,7 +59,12 @@ if (!data) {
       <Card label="Frequency" value={data.frequency} icon={FaRedo} />
       <Card label="RAC" value={data.rac} icon={LuEye} />
       <Card label="Aggregated Audience" value={data.aggregatedAudience} icon={LuUsers} />
-      <Card label="Observation Time(Avg.)" value={data.observationTimeAvg + 's'} icon={LuEye} />
+      <Card
+            label="Observation Time(Avg.)"
+            value={data.observationTimeAvg + 's'}
+            icon={LuEye}
+            change="+8,2%"
+      />
       <Card label="Observation Time(Total)" value={data.observationTimeTotal} icon={FaRegClock} />
       <Card label="Vehicles" value={data.vehicles} icon={LuCarFront} />
       <Card label="SOV" value={data.sov + '%'} icon={LuRows2} />
