@@ -3,7 +3,7 @@
   padding: 1rem;
   border-radius: 8px;
   flex: 1;
-  max-height: 20rem;
+  height: 22rem;
 }
 
 .ageHeader{
@@ -19,11 +19,10 @@
 .age-bars {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 1rem;
 }
 
 .age-bar {
-
   margin: 0 0.5rem;
   position: relative;
 }
@@ -31,19 +30,20 @@
 .age-label {
   min-width: 70px;
   color: #ccc;
-  font-size: 0.85rem;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .age-count {
   color: #ffffff;
   font-size: 0.85rem;
-  
+  font-weight: 400;
 }
 .age-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 
 }
 
