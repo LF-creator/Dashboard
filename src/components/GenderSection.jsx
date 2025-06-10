@@ -16,7 +16,7 @@ const GenderSection = ({ gender }) => {
 
   return (
     <div className="gender-box">
-      <h3>Gender Distribution</h3>
+      <h3 className="genderHeader">Gender Distribution</h3>
             <div className="gender-content">
         <div className="gender-stats">
           <div className="gender-row">

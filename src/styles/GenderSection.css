@@ -9,6 +9,15 @@
   align-items: start;
 }
 
+.genderHeader{
+  display: flex;
+  align-self: baseline;
+  margin-top: 0.5rem;
+  font-style:normal;
+  font-size: medium;
+  margin-left: 0.5rem;
+  
+}
 .gender-content {
   display: flex;
   align-items: center;
