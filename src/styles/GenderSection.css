@@ -5,34 +5,19 @@
   min-height: 240px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: start;
 }
 
-.genderHeader{
-  display: flex;
-  align-self: baseline;
+.genderHeader {
   margin-top: 0.5rem;
-  font-style:normal;
   font-size: medium;
   margin-left: 0.5rem;
-  
+  color: white;
 }
+
 .gender-content {
   display: flex;
   align-items: flex-start;
   width: 100%;
-}
-
-
-.gender-chart {
-  width: 100%;
-  height: 280px; 
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 1rem; 
 }
 
 .gender-stats {
@@ -51,56 +36,42 @@
   align-items: flex-start;
 }
 
-
 .gender-label {
   font-size: 0.85rem;
   font-weight: 600;
   color: #b0c4c4;
 }
+
 .gender-value {
   font-size: 1.1rem;
   color: white;
-
 }
+
 .female {
   color: #00d9c0;
 }
+
 .male {
   color: #4cc6f3;
 }
 
-
-
-.gender-percentages {
-  margin-top: 0.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.gender-percent {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-
-.gender-center-display {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.gender-chart {
+  position: relative;
+  width: 100%;
+  height: 280px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  width: 100%;
-  gap: 2rem;
 }
 
-.big-percent {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #ffffff;
+.gender-center-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .left-percent, .right-percent {
@@ -109,20 +80,34 @@
   align-items: center;
 }
 
-.percent-symbol {
-  font-size: 0.9rem;
-  color: #aaa;
-  margin-top: -0.3rem;
+.big-percent {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .center-label {
   font-size: 0.85rem;
-  color: #ccc;
+  color: #aaa;
   margin-top: 0.2rem;
 }
 
+.center-percent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+
+.center-percent .big-percent {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #aaa;
+}
+
 .divider {
-  height: 40px;
   width: 1px;
-  background: rgba(255, 255, 255, 0.2);
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
