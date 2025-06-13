@@ -9,9 +9,10 @@
 
 .genderHeader {
   margin-top: 0.5rem;
-  font-size: medium;
+  font-size:smaller;
   margin-left: 0.5rem;
   color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .gender-content {
@@ -37,8 +38,8 @@
 }
 
 .gender-label {
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 500;
   color: #b0c4c4;
 }
 
@@ -67,7 +68,7 @@
 
 .gender-center-display {
   position: absolute;
-  top: 40%;
+  top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;

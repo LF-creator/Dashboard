@@ -11,8 +11,10 @@ const Card = ({ label, value, icon: Icon, change }) => {
       </div>
       <div className="card-text">
         <div className="card-label">{label}</div>
-        <div className="card-value">{value}</div>
-        {change && <div className="card-change">{change}</div>}
+        <div className="card-row">
+          <div className="card-value">{value}</div>
+          {change && <div className="card-change">{change}</div>}
+        </div>
       </div>
     </div>
   );
