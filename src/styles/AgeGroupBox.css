@@ -8,7 +8,9 @@
 
 .ageHeader{
   display: flex;
-  align-self: baseline;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   margin-top: 0.5rem;
   font-size: smaller;
   margin-left: 0.5rem;
@@ -51,8 +53,8 @@
 .progress-bar {
   width: 100%;
   background: #3d454d;
-  border-radius: 2px;
-  height: 4px;
+  border-radius: 6px;
+  height: 5px;
   overflow: hidden;
 }
 
