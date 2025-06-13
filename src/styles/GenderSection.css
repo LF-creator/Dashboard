@@ -62,6 +62,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  overflow: visible; 
 }
 
 .gender-center-display {
@@ -110,4 +111,9 @@
   width: 1px;
   height: 50px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.glow-arc {
+  filter: blur(6px);
+  opacity: 0.45;
 }

@@ -31,31 +31,53 @@ const GenderSection = ({ gender }) => {
 
         <div className="gender-chart">
           <ResponsiveContainer width={"100%"} height={320}>
-            <PieChart>
-              <Pie
-                data={data}
-                dataKey="value"
-                nameKey="name"
-                cx="50%"
-                cy="60%"
-                startAngle={180}
-                endAngle={0}
-                paddingAngle={5}
-                cornerRadius={5}
-                innerRadius={155}
-                outerRadius={160}
-                stroke="none"
-              >
-                {data.map((_, index) => (
-                  <Cell
-                    key={`cell-${index}`}
-                    fill={COLORS[index % COLORS.length]}
-                    style={{ filter: `drop-shadow(0 10px 7px ${COLORS[index % COLORS.length]})` }}
-                  />
-                ))}
-              </Pie>
-            </PieChart>
-          </ResponsiveContainer>
+  <PieChart>
+    {/* GLOW LAYERS (behind) */}
+    <Pie
+      data={data}
+      dataKey="value"
+      cx="50%"
+      cy="59%"
+      startAngle={180}
+      endAngle={0}
+      paddingAngle={6}
+      innerRadius={134}
+      outerRadius={160} 
+      stroke="none"
+      isAnimationActive={false}
+    >
+      {data.map((_, index) => (
+        <Cell
+          key={`glow-${index}`}
+          fill={COLORS[index]}
+          className="glow-arc"
+        />
+      ))}
+    </Pie>
+
+    {/* ACTUAL CHART */}
+    <Pie
+      data={data}
+      dataKey="value"
+      cx="50%"
+      cy="60%"
+      startAngle={180}
+      endAngle={0}
+      paddingAngle={6}
+      cornerRadius={6}
+      innerRadius={160}
+      outerRadius={165}
+      stroke="none"
+    >
+      {data.map((_, index) => (
+        <Cell
+          key={`cell-${index}`}
+          fill={COLORS[index]}
+        />
+      ))}
+    </Pie>
+  </PieChart>
+</ResponsiveContainer>
 
           <div className="gender-center-display">
             <div className="left-percent">
