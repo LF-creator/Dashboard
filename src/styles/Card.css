@@ -1,5 +1,5 @@
 .card {
-  background-color: #192525;
+  background-color: #1B2627;
   border-radius: 12px;
   padding: 0.1rem 0rem;
   display: flex;
@@ -39,7 +39,7 @@
 }
 
 .icon-bubble {
-  background-color: #36414186;
+  background-color: #3641418e;
   padding: 2.3rem;
   border-radius: 11%;
   display: flex;

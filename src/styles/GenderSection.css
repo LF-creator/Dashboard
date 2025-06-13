@@ -1,5 +1,5 @@
 .gender-box {
-  background-color: #36414186;
+  background-color: #3641418e;
   padding: 1rem;
   border-radius: 8px;
   min-height: 240px;
@@ -27,7 +27,7 @@
   gap: 1.5rem;
   padding: 0 1rem;
   min-width: 100px;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .gender-row {
@@ -48,11 +48,11 @@
 }
 
 .female {
-  color: #00d9c0;
+  color: #6FFFE5;
 }
 
 .male {
-  color: #4cc6f3;
+  color: #54BAF3;
 }
 
 .gender-chart {
@@ -67,12 +67,13 @@
 
 .gender-center-display {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  font-weight: 100;
 }
 
 .left-percent, .right-percent {
@@ -82,8 +83,8 @@
 }
 
 .big-percent {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 3.5rem;
+  font-weight: 200;
   color: #ffffff;
 }
 
@@ -98,7 +99,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 0.5rem;
+  padding: 0 0.2rem;
 }
 
 .center-percent .big-percent {
@@ -106,6 +107,7 @@
   font-weight: 400;
   color: #aaa;
   z-index: 1; 
+   padding: 0.4rem;
 }
 
 .center-percent::before,
@@ -113,29 +115,26 @@
   content: "";
   position: absolute;
   width: 1px;
-  height: 25px; /* adjust to taste */
+  height: 35px; 
   background-color: rgba(255, 255, 255, 0.3);
   left: 50%;
   transform: translateX(-50%);
+ 
 }
 
 .center-percent::before {
-  top: -30px;
+  top: -40px;
 }
 
 .center-percent::after {
   bottom: -30px;
 }
 
-.divider {
-  width: 1px;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.2);
-}
 
 .glow-arc {
   filter: blur(6px);
-  opacity: 0.45;
+  opacity: 0.35;
+  
 }
 
 @media (max-width: 600px) {

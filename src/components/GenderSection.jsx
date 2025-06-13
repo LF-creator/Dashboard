@@ -31,6 +31,7 @@ const GenderSection = ({ gender }) => {
 
         <div className="gender-chart">
           <ResponsiveContainer width={"100%"} height={320}>
+          
   <PieChart>
     {/* GLOW LAYERS (behind) */}
     <Pie
@@ -85,13 +86,9 @@ const GenderSection = ({ gender }) => {
               <div className="center-label">Female</div>
             </div>
 
-          
-
             <div className="center-percent">
               <span className="big-percent">%</span>
             </div>
-
-            
 
             <div className="right-percent">
               <span className="big-percent">{malePercentage}</span>
