@@ -43,7 +43,7 @@ const GenderSection = ({ gender }) => {
       endAngle={0}
       paddingAngle={6}
       innerRadius={134}
-      outerRadius={160} 
+      outerRadius={159} 
       stroke="none"
     >
       {data.map((_, index) => (
