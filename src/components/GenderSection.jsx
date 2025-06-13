@@ -85,13 +85,13 @@ const GenderSection = ({ gender }) => {
               <div className="center-label">Female</div>
             </div>
 
-            <div className="divider" />
+          
 
             <div className="center-percent">
               <span className="big-percent">%</span>
             </div>
 
-            <div className="divider" />
+            
 
             <div className="right-percent">
               <span className="big-percent">{malePercentage}</span>
