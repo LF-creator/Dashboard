@@ -136,7 +136,7 @@
 
 
 .glow-arc {
-  filter: blur(0.8px);
+  filter: blur(0.5px);
   opacity: 0.15;
   mix-blend-mode: screen;
   transition: filter 0.3s ease;
