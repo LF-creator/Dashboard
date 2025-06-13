@@ -45,7 +45,6 @@ const GenderSection = ({ gender }) => {
       innerRadius={134}
       outerRadius={160} 
       stroke="none"
-      isAnimationActive={false}
     >
       {data.map((_, index) => (
         <Cell
