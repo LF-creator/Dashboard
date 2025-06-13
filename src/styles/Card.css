@@ -32,6 +32,8 @@
   line-height: 1;
   color: #ffffff;
   white-space: nowrap;
+  transform: scale(0.9, 1.2);
+  transform-origin: left center;
 }
 
 .icon-bubble {

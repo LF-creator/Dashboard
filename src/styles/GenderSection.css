@@ -90,9 +90,13 @@
 }
 
 .big-percent {
-  font-size: 3.5rem;
-  font-weight: 200;
+  font-size: 4rem;
   color: #ffffff;
+  font-weight: 100;
+  transform: scale(0.9, 1.3);
+  transform-origin: center;
+  font-family: 'STIX Two Text';
+
 }
 
 .center-label {
